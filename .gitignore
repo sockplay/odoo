@@ -49,3 +49,7 @@ package.json
 /man/
 /share/
 /src/
+/venv/
+
+#Odoo log
+odoo.log
