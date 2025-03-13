@@ -1,0 +1,18 @@
+<odoo>
+
+    <!-- Menu cha -->
+    <menuitem id="real_estate_root_menu" name="Real Estate"/>
+
+    <!-- Action of open form -->
+    <record id="real_estate_property_action" model="ir.actions.act_window">
+        <field name="name">Properties</field>
+        <field name="res_model">real.estate.property</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Child menu references correct parent menu -->
+    <menuitem id="menu_real_estate_property" name="Properties"
+              parent="real_estate_root_menu"
+              action="real_estate_property_action"/>
+    
+</odoo>
